@@ -21,7 +21,7 @@ const projects={
 
 pvc:{
 
-image:"image/pvc-design.png",
+image:"images/pvc-design.png",
 
 title:"Development of a Compact Semi-Automated Electrical PVC Conduit Processing Machine",
 
@@ -65,7 +65,7 @@ responsibilities:[
 
 collection:{
 
-image:"image/dashboard.png",
+image:"images/dashboard.png",
 
 title:"Internet Collection Monitoring System",
 
@@ -104,7 +104,7 @@ responsibilities:[
 
 church:{
 
-image:"image/htccc.png",
+image:"images/htccc.png",
 
 title:"HTCCC Church Website",
 
@@ -325,4 +325,21 @@ document.body.style.overflow="";
 }
 
 });
+
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+if (menuToggle && navLinks) {
+
+    menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+    });
+
+    document.querySelectorAll(".nav-links a").forEach(link => {
+        link.addEventListener("click", () => {
+            navLinks.classList.remove("active");
+        });
+    });
+
+}
 }
