@@ -2808,10 +2808,9 @@ font-size:16px;
     flex-direction:column;
     text-align:center;
     gap:35px;
-    padding:130px 20px 70px;
+    padding:170px 20px 70px; /* from 130px to 170px */
     min-height:auto;
 }
-
     .hero-content{
         width:100%;
     }
@@ -2854,6 +2853,9 @@ font-size:16px;
         width:250px;
         height:320px;
     }
+    .scroll-down{
+    display:none;
+}
     
 
     /*==============================
