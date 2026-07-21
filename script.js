@@ -329,16 +329,16 @@ document.body.style.overflow="";
 const menuToggle = document.querySelector(".menu-toggle");
 const navLinks = document.querySelector(".nav-links");
 
-if (menuToggle && navLinks) {
+if(menuToggle && navLinks){
 
-    menuToggle.addEventListener("click", () => {
+    menuToggle.onclick = function(){
         navLinks.classList.toggle("active");
-    });
+    };
 
-    document.querySelectorAll(".nav-links a").forEach(link => {
-        link.addEventListener("click", () => {
+    document.querySelectorAll(".nav-links a").forEach(link=>{
+        link.onclick = function(){
             navLinks.classList.remove("active");
-        });
+        };
     });
 
 }
