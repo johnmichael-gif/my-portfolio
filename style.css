@@ -2799,68 +2799,69 @@ font-size:16px;
         border-bottom:none;
     }
 
-    /*==============================
-        HERO
-    ==============================*/
+/*==============================
+    HERO MOBILE
+==============================*/
 
-   .hero{
+.hero{
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
     gap: 35px;
     padding: 130px 20px 70px;
 }
 
 .hero-image{
-    order: 1;
+    order: -1;          /* Picture muna */
+    margin-bottom: 25px;
 }
 
 .hero-content{
-    order: 2;
+    order: 1;
+    width: 100%;
 }
-    .hero-content{
-        width:100%;
-    }
 
-    .hero h1{
-        font-size:42px;
-    }
+.hero h1{
+    font-size:42px;
+}
 
-    .hero h2{
-        font-size:20px;
-    }
+.hero h2{
+    font-size:20px;
+}
 
-    .hero h3{
-        font-size:18px;
-    }
+.hero h3{
+    font-size:18px;
+}
 
-    .future{
-        max-width:100%;
-        margin:auto;
-    }
+.future{
+    max-width:100%;
+    margin:auto;
+}
 
-    .hero-buttons{
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        gap:15px;
-    }
+.hero-buttons{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+}
 
-    .hero-buttons .btn{
-        width:100%;
-        max-width:300px;
-    }
+.hero-buttons .btn{
+    width:100%;
+    max-width:300px;
+}
 
-    .hero-image::before{
-        width:260px;
-        height:330px;
-    }
+.hero-image::before{
+    width:260px;
+    height:330px;
+}
 
-    .profile-img{
-        width:250px;
-        height:320px;
-    }
-    .scroll-down{
+.profile-img{
+    width:250px;
+    height:320px;
+}
+
+.scroll-down{
     display:none;
 }
     
